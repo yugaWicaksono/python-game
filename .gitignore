@@ -1,0 +1,8 @@
+#ignore vscode debugger
+.vscode/
+
+#ignore venv
+venv/
+venv/Include/
+venv/Lib
+venc/Scripts/
