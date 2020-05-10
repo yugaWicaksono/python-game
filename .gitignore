@@ -6,3 +6,6 @@ venv/
 venv/Include/
 venv/Lib
 venc/Scripts/
+
+#ignore pycache
+__pycache__

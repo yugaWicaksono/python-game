@@ -4,7 +4,13 @@ from constants import *
 class Enemy:
 
     #Init
-    def __init__(self, color: tuple = None, size: int = None, pos_x: int = None, pos_y: int = None, position: list = None ):
+    def __init__(self, 
+        color: tuple = None, 
+        size: int = None,
+        sprite = None, 
+        pos_x: int = None, 
+        pos_y: int = None, 
+        position: list = None ):
         """ Initialize enemy class
 
         Keyword Arguments:
@@ -15,7 +21,8 @@ class Enemy:
             position {list} -- position of this enemy in x and y axis [x.position, y position] (default: {None})
         """        
         self.color = color if color is not None else COLOR_BLUE
-        self.size = size if size is not None else SIZE  
+        self.size = size if size is not None else SIZE
+        self.sprite = sprite  
         self.pos_x = pos_x if pos_x is not None else 10
         self.pos_y = pos_y if pos_x is not None else 10
         self.position = position if position is not None else [self.pos_x, self.pos_y]
